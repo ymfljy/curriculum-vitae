@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投职简历</title>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="jquery/echarts.min.js"></script>
+    <script src="jquery/macarons.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="jq/main.js"></script>
+    <link href="jquery/jquery-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="table">
+        <ul>
+            <li><a href="#BuyingPage">购买页面</a></li>
+            <li><a href="#Information">产品信息</a></li>
+        </ul>
+        <div id="BuyingPage">
+            <div id="box">
+                <div id="l_box">
+                    <div id="mask"></div>
+                    <div id="rectangle"></div>
+                    <img class="bimg" src="image/IMG_0715.JPG" style="width: 480px;height: auto" />
+                </div>
+                <div id="r_box">
+                    <img class="bimg" src="image/IMG_0715.JPG" style="width: 960px;height: auto" />
+                </div>
+            </div>
+            <div id="simg1"><a  href="#"><img id="img1" src="image/IMG_0496.JPG" style="width: 70px;height: auto"></a></div>
+            <div id="simg2"><a  href="#"><img id="img2" src="image/IMG_0715.JPG" style="width: 70px;height: auto"></a></div>
+            <div id="simg3"><a  href="#"><img id="img3" src="image/IMG_0715.JPG" style="width: 70px;height: auto"></a></div>
+            <div id="simg4"><a  href="#"><img id="img4" src="image/IMG_0715.JPG" style="width: 70px;height: auto"></a></div>
+            <div id="Title">
+                <h2>Web前端潜力型人才:袁敏富</h2>
+            </div>
+            <div id="detail">
+                <p>产品用途：Web前端工程师 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp出产日期：1997.03.24</p>
+                <p>产品等级：本科 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp产品号：18850524850</p>
+                <p>加工地：厦门集美大学 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp正品编号：18850524850@163.com</p>
+            </div>
+            <p>款式</p><div id="choise"><a id="get_choise" href="#">积极上进款</a></div>
+            <p>数量</p><div class="namber"><input id="namber"> (库存1）</div>
+            <button id="Buy">立即购买</button>
+            <div id="window" hidden>
+                <h4><a href="#" id="cls">X</a></h4>
+                <h3>传送您去邮箱发offer吧</h3>
+                <br/>
+                <h3><a href="https://mail.163.com" target="_blank">网易163邮箱传送门</a></h3>
+                <h3><a href="https://mail.126.com" target="_blank">网易126邮箱传送门</a></h3>
+                <h3><a href="https://mail.qq.com" target="_blank">腾讯qq邮箱传送门</a></h3>
+            </div>
+            <div class="Countdown">
+                该商品将在
+                <span id="hour"></span>时
+                <span id="mini"></span>分
+                <span id="sec"></span>秒
+                后下架
+            </div>
+        </div>
+        <div id="Information">
+            <h3 id="education_clk">教育背景</h3>
+            <div id="education">
+                受教时间：2015.9 - 2019.6
+                <img id="jmu" src="image/jmu.jpg">
+                <br/>
+                <br/>
+                毕业学校：集美大学
+                <br/>
+                <br/>
+                所学专业：通信工程（本科）
+                <br/>
+                <br/>
+                主修课程：Java，计算机网络技术，嵌入式技术
+                <br/>
+                <br/>
+                在校活动：参加院软件开发团队，负责Web前端开发
+
+            </div>
+            <h3>工作经历</h3>
+            <div id="work">
+                参与南百物联（厦门）科技有限公司“淘金游戏”项目；
+                <img id="gold" src="image/gold.png">
+                <img id="big_gold" src="image/gold.png" hidden>
+                <br/>
+                <br/>
+                参与南百物联（厦门）科技有限公司“智能蜂箱”项目；
+
+                <br/>
+                <br/>
+                校内共参与5项学生项目的web端开发；
+                <br/>
+                <br/>
+                <br/>
+                <strong>工作描述：</strong>拥有一定的相关知识和业务能力，在通过和本专业同学参加<br/><img id="bee" src="image/bee.png"><br/><img id="big_bee" src="image/bee.png" hidden>院内电子设计大赛积累了经验,
+                通过学长与外界公司合作制作Web客户<br/><br/>端。能持续高效率地完成商家要求，遇到未接触过的功能以及各类Bug，<br/><br/>能冷静分析检查，通过各类搜索引擎实现功能和解决Bug。
+            </div>
+            <h3>技能证书</h3>
+            <div id="skill">
+                <strong>证书：</strong>英语 CET4、计算机二级
+                <div id="main" style="height: 220px;width: 350px"></div>
+                <br/>
+                <br/>
+                <strong>技能：</strong>熟悉html、css、JavaScript，对于jQuery、<br/><br/>
+                jQuery UI、Vue、echart有一定掌握，且能够熟<br/><br/>
+                练运用PS对图片进行处理。有三年摄影经验，会<br/><br/>
+                用PR、AE、AU制作处理视频和音效。
+            </div>
+            <h3>自我评价</h3>
+            <div id="myself">
+                <img id="last" src="image/last.jpeg">
+                <img id="big_last" src="image/last.jpeg" hidden>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp工作上认真负责，能吃苦熬夜；学习上钻研精神强，<br/><br/>
+                不达目的不罢休；完美主义，拒绝差不多，一件事尽自<br/><br/>
+                己所能做到没有偏差为止；有创意，不喜趋于大众，喜<br/><br/>
+                欢从不同角度思考和解决问题；自律守时，暑期自己学<br/><br/>
+                习web每天坚持7点起且保持8个小时以上的学习时间。
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+
+        var box=document.getElementById("box");
+        var mask=document.getElementById("mask");
+        var l_box=document.getElementById("l_box");
+        var r_box=document.getElementById("r_box");
+        var rectangle=document.getElementById("rectangle");
+        var pic=r_box.getElementsByTagName('img')[0];
+
+        mask.onmouseover=function(){
+            r_box.style.display='block';
+            rectangle.style.display='block';
+        }
+
+        mask.onmouseout=function(){
+            r_box.style.display='none';
+            rectangle.style.display='none';
+        }
+
+        mask.onmousemove=function(ev){
+
+            var _event=ev||window.event;
+            var left=_event.clientX-box.offsetLeft-l_box.offsetLeft-rectangle.offsetWidth/0.48;
+            var top=_event.clientY-box.offsetTop-l_box.offsetTop-rectangle.offsetHeight/1.5;
+
+            if(left<0){
+                left=0;
+            }else if (left>(box.offsetWidth-rectangle.offsetWidth)){
+                left=box.offsetWidth-rectangle.offsetWidth;
+            }
+
+            if(top<0){
+                top=0;
+            }else if (top>(box.offsetHeight-rectangle.offsetHeight)){
+                top=box.offsetHeight-rectangle.offsetHeight;
+            }
+
+            rectangle.style.left=left+'px';
+            rectangle.style.top=top+'px';
+
+            var percentX=left/(box.offsetWidth-rectangle.offsetWidth);
+            var percentY=top/(box.offsetHeight-rectangle.offsetHeight);
+
+            pic.style.left=-percentX*(pic.offsetWidth-r_box.offsetWidth)+'px';
+            pic.style.top=-percentY*(pic.offsetHeight-r_box.offsetHeight)+'px';
+        }
+
+
+    }
+</script>
+<script type="text/javascript">
+    var fnCountdown = function(d, obj) {
+        // console.log(obj.sec)
+        var f = {
+            zero: function(n) {
+                var n = parseInt(n,10)
+                if( n > 0) {
+                    if( n <= 9 ) {
+                        n = '0' + n
+                    }
+                    return String(n)
+                } else {
+                    return '00'
+                }
+            },
+            dv: function() {
+                d = d || Date.UTC(2050,0,1)
+                var future = new Date(2018,9,21)
+                var now = new Date()
+                var dur = Math.round((future.getTime() - now.getTime())/1000)
+                var pms = {
+                    sec: "00",
+                    mini: "00",
+                    hour: "00",
+                    day: "00",
+                    month: "00",
+                    year: "0"
+                }
+                if( dur > 0 ) {
+                    pms.sec = dur % 60
+                    pms.mini = Math.floor(( dur / 60 )) > 0 ? f.zero(Math.floor(( dur / 60 )) % 60) : "00"
+                    pms.hour = Math.floor(( dur / 3600 )) > 0 ? f.zero(Math.floor(( dur / 3600 )) % 24) : "00"
+                    pms.day = Math.floor(( dur / 86400 )) > 0 ? f.zero(Math.floor(( dur / 86400 )) % 30) : "00"
+                    //此处2629744为平均每月的秒数
+                    pms.month = Math.floor(( dur / 2629744 )) > 0 ? f.zero(Math.floor((dur / 2629744)) % 12) : "00"
+                    //年份，按按回归年365天5时48分46秒算
+                    pms.year = Math.floor((dur / 31556926)) > 0 ? f.zero(Math.floor(( dur / 31556926))) : "0"
+                }
+                return pms;
+            },
+            ui: function() {
+                if(obj.sec) {
+                    obj.sec.innerHTML = f.dv().sec
+                }
+                if(obj.mini) {
+                    obj.mini.innerHTML = f.dv().mini
+                }
+                if(obj.hour) {
+                    obj.hour.innerHTML = f.dv().hour
+                }
+                if(obj.day) {
+                    obj.hour.innerHTML = f.dv().day
+                }
+                if(obj.month) {
+                    obj.month.innerHTML = f.dv().month
+                }
+                if(obj.year) {
+                    obj.year.innerHTML = f.dv().year
+                }
+                setTimeout(f.ui,1000)
+            }
+        }
+        f.ui();
+    }
+</script>
+<script type="text/javascript">
+    var d = Date.UTC(2020,1,1,20,0);
+    var obj = {
+        sec: document.getElementById('sec'),
+        mini: document.getElementById('mini'),
+        hour: document.getElementById('hour'),
+    }
+    fnCountdown(d, obj)
+</script>
+<script>
+    option = {
+        title : {
+            text: '各项技能掌握情况',
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer:{
+                type:'shadow'
+            }
+        },
+        grid:{
+            x:50,
+            y:40
+        },
+        legend: {
+            data:['掌握度']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                axisLabel:{
+                    interval:0,
+                    rotate:40
+                },
+                data : ['html','css','javaScript','jQuery','jQuery-UI','echart','Vue','PS','摄影']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value',
+                max:100,
+                axisLabel:{
+                    formatter:'{value}%',
+                    interval:1
+                }
+            }
+        ],
+        series : [
+            {
+                name:'掌握程度',
+                type:'bar',
+                data:[80, 80, 70, 60, 60, 50, 20, 90, 80],
+                markPoint : {
+                    data : [
+                        {name : '熟练度', value : 95, xAxis: 1, yAxis: 95, symbolSize:18},
+                        {name : '熟练度', value : 95, xAxis: 2, yAxis: 95}
+                    ]
+                },
+            }
+        ]
+    };
+    var myChart = echarts.init(document.getElementById("main"),"macarons");
+    myChart.setOption(option);
+</script>
+</html>
