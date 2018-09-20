@@ -61,12 +61,12 @@
     position: absolute;
     z-index: 5;
 }
-#simg1,#simg2,#simg3,#simg4{
+#simg1,#simg2,#simg3{
     float: left;
     display: inline-block;
     position: relative;
     top: 45px;
-    left: -175px;
+    left: -92px;
     margin: 0px 20px ;
 }
 #Title>h2{
