@@ -44,6 +44,12 @@ $(document).ready(function () {
     $("#cls").click(function () {
         $("#window").hide();
     });
+    $("#jmu").click(function () {
+        $("#big_jmu").fadeIn(500);
+    })
+    $("#big_jmu").click(function () {
+        $("#big_jmu").hide();
+    })
     $("#gold").click(function () {
         $("#big_gold").fadeIn(500);
     });
